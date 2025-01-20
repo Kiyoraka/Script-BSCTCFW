@@ -39,13 +39,14 @@ A comprehensive guide for using the VBA macro to automatically change non-white 
 * Example: `folderPath = "C:\Users\YourName\Documents\WordFiles\"`
 * Ensure the path ends with a backslash `\`
 
-### 7. Run the Script
-* Close the VBA editor
-* Press **Alt + F8** to open the Macro dialog box
-* Select `ChangeNonWhiteNonRedShadedTableColorInBatch`
-* Click **Run**
+### 7. Change the color
+* Change the color : `cell.Shading.BackgroundPatternColor = wdColorBlue`
+* Color Reference : https://learn.microsoft.com/en-us/office/vba/api/word.wdcolor
 
-### 8. Check the Results
+### 8. Run the Script
+* Click **Run** the script from the VBA Editor
+
+### 9. Check the Results
 * Wait for the completion message
 * Open a processed document to verify the changes
 * All non-white shaded cells should now be blue
